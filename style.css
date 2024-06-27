@@ -237,8 +237,8 @@ section .title span::after{
   width: 45%;
 }
 .about .left img{
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -531,4 +531,117 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+
+/* Mine */
+.navbar {
+  display: flex;  /* Make navbar a flex container */
+  justify-content: space-between;  /* Align items to opposite ends */
+}
+
+.social-links {
+  display: flex;  /* Make social links a flex container */
+}
+
+.social-icon {
+  margin-left: 20px;  /* Add margin to separate icons */
+}
+
+.social-spacer {
+  display: inline-block;
+  width: 20px;  /* Set width for spacer element */
+}
+
+/* lists */
+ul.main-list {
+  margin-top: 10px;
+  margin-left: 40px; /* Indentación para la lista principal */
+}
+
+/* cv buttons */
+.cv-box {
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 20px; /* Add some space above the buttons (optional) */
+}
+
+.cv-button {
+  background-color: #3498db; /* Adjust background color */
+  color: white;
+  padding: 10px 20px; /* Adjust padding for button size */
+  border: none;
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  margin: 5px; /* Add spacing between buttons (optional) */
+  transition: background-color 0.2s ease-in-out; /* Add smooth transition on hover */
+}
+
+.cv-button:hover {
+  background-color: #2980b9; /* Change button color on hover */
+}
+
+/* mis boxes */
+.skills .boxes .box {
+  margin-bottom: 1rem;
+}
+
+.skills .boxes .box .topic {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skills .boxes .box .progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skills .boxes .box .progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Skills */
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap; /* Wrap boxes if they don't fit in one row */
+}
+
+.skills .boxes .title {
+  /* Remove relative positioning */
+  /* position: absolute; */
+  float: left; /* Make the title element float to the left */
+  padding: 10px;  /* Adjust padding as needed */
+  /* Set background to transparent */
+  background-color: transparent;  
+  color: black; /* Adjust text color for title (optional) */
+  font-weight: bold; /* Make title bold (optional) */
+  width: auto; /* Allow title to fit its content */
+  margin-right: 10px; /* Add margin for spacing between title and box */
+}
+
+.skills .boxes .box {
+  display: flex; 
+  flex-direction: column; /* Stack elements vertically */
+  flex-grow: 1; /* Allow box to grow and fill remaining space */
+  padding: 10px; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.skills .boxes .box.multi-level {
+  /* Inherit flex properties from parent box */
+}
+
+.skills .boxes .box .level {
+  background-color: #007bff; /* Adjust background color */
+  color: white;  /* Adjust text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px;
+  text-align: center;  /* Centers text horizontally */
+  margin-bottom: 5px; /* Add margin for spacing between levels */
 }
