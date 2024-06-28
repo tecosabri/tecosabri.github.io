@@ -559,6 +559,12 @@ ul.main-list {
   margin-left: 40px; /* Indentación para la lista principal */
 }
 
+ul.main-list2 {
+  margin-top: 10px;
+  margin-left: 40px; /* Indentación para la lista principal */
+  text-align: left;
+}
+
 /* cv buttons */
 .cv-box {
   display: flex; /* Enable flexbox for centering */
